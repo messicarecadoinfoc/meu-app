@@ -28,8 +28,8 @@ function Desc2(e) {
     setCor(novacor);
   }
 
-  function mudarCaixa(){
-    setCaixa(!caixa)
+  function mudarCaixa(e){
+    setCaixa(e.target.checked);
   }
 
   return (
@@ -54,7 +54,7 @@ function Desc2(e) {
 
       <div className="caixa">
         <h1> Você gosta do pedro? :{caixa ? "Sim" : "Não"}</h1>
-        <input type="checkbox" checked={caixa} onChange={(e) => setCaixa(e.target.checked)} />
+        <input type="checkbox" onChange={mudarCaixa} />
 
       </div>
       
