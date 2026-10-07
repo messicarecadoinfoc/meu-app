@@ -53,7 +53,7 @@ function Desc2(e) {
 
 
       <div className="caixa">
-        <h1> Você gosta do pedro? :{caixa ? "Sim" : "Não"}</h1>
+        <h1> Você gosta do pedro? : {caixa ? "Sim" : "Não"}</h1>
         <input type="checkbox" onChange={mudarCaixa} />
 
       </div>
